@@ -14,13 +14,11 @@ const { Basket } = require('../src/Basket.js');
     const basket = new Basket();
 
     // arrange : addItem, basketCapacity; 
-    const basketCapacity = 0;
+    const basketCapacity = 10;
     basket.addItem({ id: `overflow bagel` })
 
     // act : isBasketFull;
     basket.isBasketFull(basketCapacity);
-
-
 
     // assert / result : expected = actual ?
     // isBasketFull = true .:
@@ -29,7 +27,5 @@ const { Basket } = require('../src/Basket.js');
     console.log(`Test seven: ${result ? `passed` : `failed`}`);
     console.log(`=========================================`)
     console.log(``)
-
-
 
 }
