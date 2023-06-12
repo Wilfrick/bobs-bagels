@@ -1,15 +1,14 @@
-const { basket } = require("../src/basket");
+const { Basket } = require("../src/Basket");
 const assertEquals = (expected, actual) => expected === actual;
 
 {
-
     // As a member of the public, so I can order a bagel when I want to, I'd like to add an item to my basket
-
-
     // check that adding an item to an empty basket increases the length of the array
 
     // arrange
+    const basket = new Basket();
     let itemToBeAdded = { id: 1 };
+
 
 
     // act
@@ -30,7 +29,10 @@ const assertEquals = (expected, actual) => expected === actual;
     // cleanup
     basket.basketItems = [];
 }
+
 {
+    const basket = new Basket();
+
     let input = { id: `bagel` };
     // Test 2  : Check that item added to basket is actually the item added
     let expected = input;
@@ -50,6 +52,7 @@ const assertEquals = (expected, actual) => expected === actual;
 }
 {
     // test 3: An item without an id property is not added to the basket
+    const basket = new Basket();
 
     // arrange
     let inputItem = {
@@ -75,6 +78,8 @@ const assertEquals = (expected, actual) => expected === actual;
 }
 {
     // test 4: An item can be added to a basket containing existing items
+    const basket = new Basket();
+
     basket.basketItems = [{ id: 'bagel1' }]
     let inputItem = { id: 'bagel2' }
 
