@@ -37,8 +37,9 @@ class Basket {
         }
     }
 
-    removeItem() {
-
+    removeItem(itemToBeRemoved) {
+        let indexNum = this.basketItems.indexOf(itemToBeRemoved);
+        this.basketItems.splice(indexNum, 1)
     }
 
 
