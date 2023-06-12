@@ -22,6 +22,7 @@
 class Basket {
 
     basketItems = [];
+    // basketCapacity = 0;
 
     constructor() {
 
@@ -37,10 +38,26 @@ class Basket {
         }
     }
 
+    // skipped for now
     removeItem(itemToBeRemoved) {
-        let indexNum = this.basketItems.indexOf(itemToBeRemoved);
-        this.basketItems.splice(indexNum, 1)
+        // let indexNum = this.basketItems.indexOf(itemToBeRemoved);
+        // this.basketItems.splice(indexNum, 1)
     }
+
+    isBasketFull(basket_capacity) {
+        if (basket_capacity < this.basketItems.length) {
+            console.log(`Basket is full`)
+            console.log(``)
+        };
+    }
+
+    increaseBasketCapacityTo(basketCapacity) {
+
+    }
+
+
+
+
 
 
 }
