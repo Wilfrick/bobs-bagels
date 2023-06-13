@@ -3,6 +3,7 @@
 // capacity.
 
 const { Basket } = require('../src/Basket.js');
+const assertEquals = (expected, actual) => expected === actual;
 
 {
     console.log(``)
@@ -14,17 +15,20 @@ const { Basket } = require('../src/Basket.js');
     const basket = new Basket();
 
     // arrange : addItem, basketCapacity; 
-    const basketCapacity = 10;
+    capacity = basket.basketCapacity = 0;
     basket.addItem({ id: `overflow bagel` })
 
     // act : isBasketFull;
-    basket.isBasketFull(basketCapacity);
+    basket.isBasketFull(capacity);
+    const expected = true;
 
     // assert / result : expected = actual ?
     // isBasketFull = true .:
-    result = (basketCapacity > basket.basketItems.length);
+    result = assertEquals(expected, (basket.basketCapacity < basket.basketItems.length));
 
-    console.log(`Test seven: ${result ? `passed` : `failed`}`);
+    // result = (basket.basketCapacity < basket.basketItems.length);
+
+    console.log(`Test seven ${result ? `passed` : `failed`}`);
     console.log(`=========================================`)
     console.log(``)
 

@@ -38,21 +38,21 @@ class Basket {
         }
     }
 
-    // skipped for now
     removeItem(itemToBeRemoved) {
-        // let indexNum = this.basketItems.indexOf(itemToBeRemoved);
-        // this.basketItems.splice(indexNum, 1)
+        let indexNum = this.basketItems.indexOf(itemToBeRemoved);
+        this.basketItems.splice(indexNum, 1)
     }
 
-    isBasketFull(basket_capacity) {
-        if (basket_capacity < this.basketItems.length) {
-            console.log(`Basket is full`)
-            console.log(``)
+    isBasketFull(basketCapacity) {
+        if (basketCapacity < this.basketItems.length) {
+            console.log(true)
         };
+        // console.log(`Basket is full: ${basketCapacity < this.basketItems.length}`);
+
     }
 
     increaseBasketCapacityTo(basketCapacity) {
-
+        this.basketCapacity += basketCapacity;
     }
 
 

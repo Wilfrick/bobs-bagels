@@ -5,6 +5,11 @@ const assertEquals = (expected, actual) => expected === actual;
     // As a member of the public, so I can order a bagel when I want to, I'd like to add an item to my basket
     // check that adding an item to an empty basket increases the length of the array
 
+    console.log(``)
+    console.log(`Test one: add item to empty basket increases length of array`)
+    console.log(`============================================================`)
+    console.log(``)
+
     // arrange
     const basket = new Basket();
     let itemToBeAdded = { id: 1 };
@@ -32,9 +37,14 @@ const assertEquals = (expected, actual) => expected === actual;
 
 {
     const basket = new Basket();
-
     let input = { id: `bagel` };
     // Test 2  : Check that item added to basket is actually the item added
+
+    console.log(``)
+    console.log(`Test two: check item added to basket is correct item`)
+    console.log(`============================================================`)
+    console.log(``)
+
     let expected = input;
 
     // act
@@ -52,6 +62,12 @@ const assertEquals = (expected, actual) => expected === actual;
 }
 {
     // test 3: An item without an id property is not added to the basket
+
+    console.log(``)
+    console.log(`Test three: item without id is not added to basket`)
+    console.log(`============================================================`)
+    console.log(``)
+
     const basket = new Basket();
 
     // arrange
@@ -78,6 +94,12 @@ const assertEquals = (expected, actual) => expected === actual;
 }
 {
     // test 4: An item can be added to a basket containing existing items
+
+    console.log(``)
+    console.log(`Test four: item can be added to a basket containing existing items`)
+    console.log(`==================================================================`)
+    console.log(``)
+
     const basket = new Basket();
 
     basket.basketItems = [{ id: 'bagel1' }]
