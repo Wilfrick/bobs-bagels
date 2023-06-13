@@ -14,7 +14,6 @@ const assertEquals = (expected, actual) => expected === actual;
     const basket = new Basket();
 
     // arrange : basketCapacity; 
-    basket.basketCapacity = 10;
     const higherCapacity = 20;
 
     // act : increaseBasketCapacityTo;

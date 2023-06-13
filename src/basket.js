@@ -22,7 +22,7 @@
 class Basket {
 
     basketItems = [];
-    // basketCapacity = 0;
+    basketCapacity = 0;
 
     constructor() {
 
