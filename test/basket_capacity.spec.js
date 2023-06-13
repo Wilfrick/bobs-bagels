@@ -15,7 +15,7 @@ const assertEquals = (expected, actual) => expected === actual;
     const basket = new Basket();
 
     // arrange : addItem, basketCapacity; 
-    capacity = basket.basketCapacity = 0;
+    capacity = basket.basketCapacity;
     basket.addItem({ id: `overflow bagel` })
 
     // act : isBasketFull;

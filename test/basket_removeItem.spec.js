@@ -22,17 +22,12 @@ const assertEquals = (expected, actual) => expected === actual;
 
     // act
     basket.removeItem(input)
-
-
-    // assert
     const decreasedLength = basket.basketItems.length
     const expectedLength = initialLength - 1;
 
-    // result
+    // assert
     result = assertEquals(decreasedLength, expectedLength)
     console.log(`Test five ${result ? `passed` : `failed`}`)
-
-    // clean up 
 
 }
 
