@@ -4,9 +4,9 @@ const assertEquals = (expected, actual) => expected === actual;
 
 
 {
-    // check that increasing basketCapacity increases the size of the array 
+    // check that input increases basketCapacity  
     console.log(``)
-    console.log(`Test eight: increasing basketCapacity increases the size of the array`)
+    console.log(`Test eight: check that input increases basketCapacity`)
     console.log(`=====================================================================`)
     console.log(``)
 
